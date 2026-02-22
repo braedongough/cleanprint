@@ -1,12 +1,6 @@
-@import "tailwindcss";
-
-@theme {
-  --font-georgia: "Georgia", serif;
-  --font-garamond: "Garamond", "EB Garamond", serif;
-  --font-baskerville: "Libre Baskerville", serif;
-  --font-source-serif: "Source Serif 4", "Source Serif Pro", serif;
-  --font-charter: "Charter", "Bitstream Charter", serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Article body typography */
 .article-body {

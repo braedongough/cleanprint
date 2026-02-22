@@ -1,27 +1,37 @@
 {
-  "name": "website-printing",
-  "module": "index.ts",
-  "type": "module",
+  "name": "cleanprint",
+  "displayName": "Clean Print",
+  "version": "0.1.0",
+  "description": "Convert articles into beautifully formatted, print-ready layouts",
   "private": true,
   "scripts": {
-    "dev": "bun --hot server.ts",
-    "start": "bun server.ts"
-  },
-  "devDependencies": {
-    "@types/bun": "latest",
-    "@types/jsdom": "^27.0.0",
-    "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.3"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
+    "dev": "plasmo dev",
+    "build": "plasmo build"
   },
   "dependencies": {
     "@mozilla/readability": "^0.6.0",
-    "bun-plugin-tailwind": "^0.1.2",
-    "jsdom": "^28.1.0",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
-    "tailwindcss": "^4.2.0"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@plasmohq/storage": "^1.12.0",
+    "@types/chrome": "^0.0.287",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "autoprefixer": "^10.4.20",
+    "plasmo": "^0.89.3",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.2"
+  },
+  "manifest": {
+    "permissions": [
+      "activeTab",
+      "storage",
+      "scripting"
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ]
   }
 }
