@@ -11,14 +11,14 @@
     "@types/bun": "latest",
     "@types/jsdom": "^27.0.0",
     "@types/react": "^19.2.14",
-    "@types/react-dom": "^19.2.3",
-    "bun-plugin-tailwind": "^0.1.2"
+    "@types/react-dom": "^19.2.3"
   },
   "peerDependencies": {
     "typescript": "^5"
   },
   "dependencies": {
     "@mozilla/readability": "^0.6.0",
+    "bun-plugin-tailwind": "^0.1.2",
     "jsdom": "^28.1.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
